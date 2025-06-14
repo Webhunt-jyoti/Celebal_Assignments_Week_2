@@ -7,7 +7,7 @@ import "./Todo.css";
 
 export const TodoWrapperLocalStorage = () => {
   const [todos, setTodos] = useState(() => {
-    // 🛠️ Fix: use lazy initializer to load from localStorage once
+    
     const stored = localStorage.getItem("todos");
     return stored ? JSON.parse(stored) : [];
   });
