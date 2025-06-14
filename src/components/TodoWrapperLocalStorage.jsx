@@ -15,7 +15,7 @@ export const TodoWrapperLocalStorage = () => {
   const [filter, setFilter] = useState("all");
   const [sortType, setSortType] = useState("default");
 
-  // ✅ Always save to localStorage when todos change
+  
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
